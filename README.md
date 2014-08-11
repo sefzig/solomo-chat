@@ -9,6 +9,8 @@ http://sefzig.net/solomo/chat/?sitzung=githubDemo&name=Daniel%20Tester
 
 ## URL-Parameter
 
+Die Einbindung kann mit URL-Parametern gesteuert werden:
+
 <pre>
 http://sefzig.net/solomo/chat/
 ?sitzung= // Vorgegebenes Kürzel des Chatraums, Zufallszahl wenn leer
