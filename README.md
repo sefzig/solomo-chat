@@ -19,3 +19,7 @@ http://sefzig.net/solomo/chat/
 ?sitzung= // Vorgegebenes Kürzel des Chatraums, Zufallszahl wenn leer
 &name=    // Vorgegebener Name des Teilnehmers, Eingabe-Aufforderung wenn leer
 </pre>
+
+## Einrichtung
+
+* Das Verzeichnis "daten" muss chmod777 sein.
