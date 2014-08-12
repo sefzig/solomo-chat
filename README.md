@@ -9,6 +9,7 @@ Sitzung und Anzeige-Name können mit URL-Parametern vorgegeben werden.
 * [solomo-chat](https://github.com/sefzig/solomo-chat/blob/master/README.md) 
 * [solomo-daumen](https://github.com/sefzig/solomo-daumen/blob/master/README.md) 
 * [solomo-druck](https://github.com/sefzig/solomo-druck/blob/master/README.md) 
+* [solomo-konfig](https://github.com/sefzig/solomo-konfig/blob/master/README.md) 
 
 Links
 * [Demo der Sitzung "gh"](http://sefzig.net/solomo/chat/?sitzung=gh&name=Daniel%20Tester) 
