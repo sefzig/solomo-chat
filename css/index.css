@@ -1,118 +1,105 @@
-body {
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-}
 
-html, body, #main, form, table, tbody, tr, td {
-    width: 100%;
-    height: 100%;
-}
+ /* Allgemein */
+    body {
+       margin: 0px;
+       padding: 0px;
+    /* background: transparent; */
+       overflow: hidden;
+    }
+    body, td, input {
+       font-family: "Din Text Pro Regular", Arial, sans-serif;
+       font-size-adjust:0.5; 
+       font-weight:normal; 
+       font-style:normal;
+       font-size: 12px;
+    /* color: #000000; */
+    }
+    html, body, #main, form, table, tbody, tr, td {
+       width: 100%;
+       height: 100%;
+    }
+    td {
+       padding:0px;
+       border: red 0px solid;
+    }
+    input {
+       border: 0px solid #cccccc;
+    }
+    p{
+       margin:0px;
+       padding:0px;
+    }
 
-#main {
-    margin: auto;
-	border: silver 0px solid;
-	width: 100%;
-    height:100%;
-	background: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:bold;
-    font-size : 12px;
-    border-collapse:collapse;
-}
+ /* Layout */
+    #main {
+		 background: silver;
+    }
+    #sender {
+       clear:both;   
+       position: absolute;
+       right: 0px;
+       bottom: 0px;
+       left: 0px;
+       height: 36px;
+       border: 0px solid #cccccc;
+       width: 100%;
+       background: white;
+       font-weight:bold;
+       margin:0px;
+       padding:0px;
+       font-weight:bold;
+    }
+    #result {
+       position: absolute;
+       top: 0px;
+       right: 0px;
+       bottom: 36px;
+       left: 0px;
+       border: 0px solid #cccccc;
+	    background: silver;
+       text-align:left;
+       font-weight:bold;
+       padding:10px;
+       padding-bottom:0px;
+       overflow-x:hidden;
+       overflow-y:auto;
+    }
 
-#sender {
-    clear:both;   
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    height: 36px;
-    border: 0px solid #cccccc;
-	width: 100%;
-	background: white;
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight:bold;
-   font-size : 12px;
-   margin:0px;
-   padding:0px;
-}
-
-td {
-   padding:0px;
-   border: red 0px solid;
-}
-
-#result {
-     position: absolute;
-     top: 0px;
-     right: 0px;
-     bottom: 36px;
-     left: 0px;
-     border: 0px solid #cccccc;
-	 background: silver;
-    text-align:left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:bold;
-    font-size : 12px;
-    padding:10px;
-    padding-bottom:0px;
-    overflow-x:hidden;
-    overflow-y:auto;
-}
-
-.blase {
-    background: white;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    padding: 5px;
-    margin-bottom: 10px;
-}
-
-#msg {
-    width: 97.1%;
-    height: 96%;
-    padding-left:2.5%;
-    font-size: 15px;
-    color: silver;
-}
-
-.error {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:normal;
-    font-size : 10px;
-    color:#dd1111;
-    padding:0px;
-
-}
-
-
-.text {
-	border: 0px solid #cccccc;
-}
-
-input {
-    border: 0px solid #cccccc;
-}
-
-p{
-    margin:0px;
-    padding:0px;
-}
-
-.name, .txt {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:normal;
-    color:black;
-    font-size: 16px;
-}
-.name {
-    color:darkGray;
-    font-style: italic;
-}
-
-#mchat{
-    border:0px;
-    width:100%;
-}
+ /* Chat */
+    .blase {
+       background: white;
+       -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+       border-radius: 10px;
+       padding: 5px;
+       margin-bottom: 10px;
+    }
+    #msg {
+       width: 97.1%;
+       height: 96%;
+       padding-left:2.5%;
+       font-size: 15px;
+       color: silver;
+    }
+    .error {
+       font-size : 10px;
+       color:#dd1111;
+       padding:0px;
+    }
+    .text {
+	    border: 0px solid #cccccc;
+    }
+    .name, .txt {
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight:normal;
+       color:black;
+       font-size: 16px;
+    }
+    .name {
+       color:darkGray;
+       font-style: italic;
+    }
+    #mchat{
+       border:0px;
+       width:100%;
+    }

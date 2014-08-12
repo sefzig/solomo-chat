@@ -5,7 +5,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Solomo Chat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
-    <link type="text/css" href="<?=$root?>css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="<?=$root?>../solomo/css/_solomo.css">
+    <link rel="stylesheet" type="text/css" href="<?=$root?>../solomo/css/default.css">
+    <link rel="stylesheet" type="text/css" href="<?=$root?>css/index.css" />
     <script type="text/javascript" src="<?=$root?>js/jquery.js"></script><!-- Jquery nur für Nicescroll :/ -->
     <script type="text/javascript" src="<?=$root?>js/jquery.nicescroll.min.js"></script>
     <script type="text/javascript" language="javascript">
