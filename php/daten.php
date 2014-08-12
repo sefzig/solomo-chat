@@ -1,13 +1,18 @@
 <?php 
+
     $sitzung = $_GET['sitzung'];
     $daten = urldecode($_GET['daten']);
     if ((isset($daten)) && ($daten != "")) {} else { $daten = "../daten/"; }
     $datei = $daten."".$sitzung.".html";
     
-	if (isset($_GET['msg'])){
-		if (file_exists($datei)) {
+	 if (isset($_GET['msg']))
+	 {
+		if (file_exists($datei)) 
+		{
 		   $f = fopen($datei,"a+");
-		} else {
+		} 
+		   else 
+		{
 		   $f = fopen($datei,"w+");
 		}
       $nick = isset($_GET['nick']) ? $_GET['nick'] : "Hidden";
@@ -17,14 +22,18 @@
 		fclose($f);
 		
 		echo $line;
-		
-	} else if (isset($_GET['all'])) {
+    } 
+    else if (isset($_GET['all'])) 
+	 {
 	   $flag = file($datei);
 	   $content = "";
-	   foreach ($flag as $value) {
+		
+	   foreach ($flag as $value) 
+		{
 	   	$content .= $value;
 	   }
+		
 	   echo $content;
+	 }
 
-	}
 ?>	

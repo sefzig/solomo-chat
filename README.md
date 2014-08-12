@@ -7,13 +7,8 @@ Sitzung und Anzeige-Name können mit URL-Parametern vorgegeben werden.
 
 ## Links
 
-<<<<<<< HEAD
 * [Demo der Sitzung "gh"](http://sefzig.net/solomo/chat/?sitzung=gh&name=Daniel%20Tester) 
-* [Druckvorlage für die Sitzung "gh"](http://sefzig.net/solomo/druck/?zahler=0&prefix=gh&korrektur=L&zeilen=6&spalten=4&template=standard&konfig=0&cta=Sprich%20mit%20uns!&url=http://sefzig.net/solomo/chat/?sitzung=)
-=======
-* [Demo der Sitzung "gh"](http://sefzig.net/solomo/chat/?sitzung=gh&name=Daniel%20Tester)
 * [Druckvorlage für die Sitzung "gh"](http://sefzig.net/solomo/druck/?zahler=0&prefix=gh&korrektur=L&zeilen=6&spalten=4&template=standard&konfig=0&cta=Sprich%20mit%20uns!&url=http://sefzig.net/solomo/chat/?sitzung=) 
->>>>>>> Textänderung
 
 ## URL-Parameter
 

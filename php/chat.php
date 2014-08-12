@@ -1,5 +1,11 @@
 <?php
 
+ /* Micro Chat Script
+  * 
+  * http://www.phptoys.com/product/micro-chat.html
+  */
+    session_start();
+
  /* Kicken-Integration
   * 
   * folgt
@@ -10,12 +16,6 @@
  // if ((!isset($sitzung)) || ($sitzung == "")) { $sitzung = rand(0, 99999); }
     echo "<!-- sitzung: '".$sitzung."' -->";
     
- /* Micro Chat Script
-  * 
-  * http://www.phptoys.com/product/micro-chat.html
-  */
-    session_start();
-
  /* Konfiguration
   * 
   * folgt
