@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteBase /solomo-chat
+
+# Weiche: QR Codes
+RewriteCond %{REQUEST_URI} qrcode
+RewriteRule ^([a-zA-Z0-9]*)/.qrcode$ http://chart.apis.google.com/chart?cht=qr&chs=500x500&chld=L&choe=UTF-8&chl=http://sefzig.net/solomo/chat/$1/ [NC]
+
+# Rewrite Parameter: Kurzlink-ID
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^([a-zA-Z0-9]*)/([a-zA-Z0-9\s\+]*)/$ index.php?sitzung=$1&name=$2&rootplus=2 [NC,L]
+RewriteRule ^([a-zA-Z0-9]*)/([a-zA-Z0-9\s\+]*)$ index.php?sitzung=$1&name=$2&rootplus=1 [NC,L]
+RewriteRule ^([a-zA-Z0-9]*)/$ index.php?sitzung=$1&rootplus=1 [NC]
+RewriteRule ^([a-zA-Z0-9]*)$ index.php?sitzung=$1&rootplus=0 [NC]

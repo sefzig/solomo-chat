@@ -5,22 +5,23 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Solomo Chat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
-    <link type="text/css" href="css/index.css" rel="stylesheet" />
-    <script type="text/javascript" src="js/jquery.js"></script><!-- Jquery nur für Nicescroll :/ -->
-    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+    <link type="text/css" href="<?=$root?>css/index.css" rel="stylesheet" />
+    <script type="text/javascript" src="<?=$root?>js/jquery.js"></script><!-- Jquery nur für Nicescroll :/ -->
+    <script type="text/javascript" src="<?=$root?>js/jquery.nicescroll.min.js"></script>
     <script type="text/javascript" language="javascript">
     <!--
       var httpObject = null;
       var link =       "";
       var timerID =    0;
-      var nickName =   "<?php echo $nickname; ?>";
-      var sitzung =    "<?php echo $sitzung; ?>";
-      var daten =      "<?php echo $datenEncode; ?>";
+      var nickName =   "<?=$nickname?>";
+      var sitzung =    "<?=$sitzung?>";
+      var daten =      "<?=$datenEncode?>";
+      var root =       "<?=$root?>";
     //-->
     </script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="<?=$root?>js/index.js"></script>
   </head>
-  <body onload="UpdateTimer();" data-sitzung="<?php echo $sitzung; ?>">
+  <body onload="UpdateTimer();" data-sitzung="<?=$sitzung?>" data-name="<?=$nickname?>" data-root="<?=$root?>">
     <div id="main">
       <?php if ((!isset($name)) || ($name == "") || ($name == "Anonym") || ($name == "Hidden") || ($name == "Kein Name") || ($name == "KeinName")) { ?>
         <?php createForm(); ?>

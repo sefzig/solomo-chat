@@ -47,7 +47,7 @@
        httpObject = getHTTPObject();
        if (httpObject != null) {
           console.log("daten: "+daten);
-          link = "php/daten.php?sitzung="+sitzung+"&daten="+daten+"&nick="+nickName+"&msg="+document.getElementById('msg').value;
+          link = root+"php/daten.php?sitzung="+sitzung+"&daten="+daten+"&nick="+nickName+"&msg="+document.getElementById('msg').value;
           httpObject.open("GET", link , true);
           httpObject.onreadystatechange = setOutput;
           httpObject.send(null);
@@ -59,7 +59,7 @@
        httpObject = getHTTPObject();
        var randomnumber=Math.floor(Math.random()*10000);
        if (httpObject != null) {
-          link = "php/daten.php?sitzung="+sitzung+"&all=1&rnd="+randomnumber;
+          link = root+"php/daten.php?sitzung="+sitzung+"&all=1&rnd="+randomnumber;
           httpObject.open("GET", link , true);
           httpObject.onreadystatechange = setAll;
           httpObject.send(null);

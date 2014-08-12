@@ -1,6 +1,7 @@
 <?php 
 
     $sitzung = $_GET['sitzung'];
+    $name =  urldecode($_GET['name']);
     $daten = urldecode($_GET['daten']);
     if ((isset($daten)) && ($daten != "")) {} else { $daten = "../daten/"; }
     $datei = $daten."".$sitzung.".html";

@@ -1,5 +1,16 @@
 <?php
 
+ /* Htaccess-Verzeichnisse
+  * 
+  * folgt
+  */
+    $rootplus = $_GET["rootplus"]; 
+    if      ($rootplus == 0) { $root = ""; }
+    else if ($rootplus == 1) { $root = "../"; }
+    else if ($rootplus == 2) { $root = "../../"; }
+    else if ($rootplus == 3) { $root = "../../../"; }
+    else { $root = ""; }
+
  /* Micro Chat Script
   * 
   * http://www.phptoys.com/product/micro-chat.html
@@ -23,13 +34,13 @@
     $absendenText = "Nachricht eingeben und Enter";
     function createForm(){
       $sitzung = $_GET['sitzung']; // Sitzungs-ID ?>
-      <form action="" method="get">
+      <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
         <table align="center"><tbody><tr><td valign="center" align="center">
           Gib deinen Namen ein:
           <br /><br />
+          <input type="hidden" name="sitzung" value="<?=$sitzung?>">
           <input class="text" type="text" name="name" style="border: black 1px solid; padding: 10px;" />
-          <input class="text" type="submit" name="submitBtn" value="Anmelden" style="border: black 1px solid; padding: 10px;" />
-          <input type="hidden" name="sitzung" value="<?php echo $sitzung; ?>">
+          <input class="text" type="submit" value="Anmelden" style="border: black 1px solid; padding: 10px;" />
           <br /><br />
         </td></tr></tbody></table>
       </form>
