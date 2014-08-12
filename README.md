@@ -4,12 +4,12 @@ Solomo Chat
 Super-einfaches Chat-Programm zur Einbindung in mobile Seiten. 
 Würde man heutzutage mit Nodes machen: Ajax im Javascript-Interval. 
 Sitzung und Anzeige-Name können mit URL-Parametern vorgegeben werden. 
+[<- zurück zu solomo](https://github.com/sefzig/solomo/blob/master/README.md) 
 
-Readmes
+Solomo-Funktionen
 * [solomo-chat](https://github.com/sefzig/solomo-chat/blob/master/README.md) 
 * [solomo-daumen](https://github.com/sefzig/solomo-daumen/blob/master/README.md) 
 * [solomo-druck](https://github.com/sefzig/solomo-druck/blob/master/README.md) 
-* [<- zurück zu solomo](https://github.com/sefzig/solomo/blob/master/README.md) 
 
 Links
 * [Demo der Sitzung "gh"](http://sefzig.net/solomo/chat/?sitzung=gh&name=Daniel%20Tester) 
